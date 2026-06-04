@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Visual Agency Deficit</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&family=JetBrains+Mono:wght@400&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --glass-bg: rgba(255, 255, 255, 0.9);
+            --glass-border: rgba(0, 0, 0, 0.05);
+            --shadow-soft: 0 10px 40px -10px rgba(0,0,0,0.08);
+            
+            --grad-title: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            --grad-highlight: linear-gradient(135deg, #007CF0 0%, #00DFD8 100%);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(121, 40, 202, 0.08) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(0, 223, 216, 0.12) 0px, transparent 50%);
+            background-attachment: fixed;
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6, .title {
+            font-family: 'Outfit', sans-serif !important;
+        }
+
+        .gradient-text {
+            background: var(--grad-highlight);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+        
+        .section-title-gradient {
+            background: var(--grad-title);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block; 
+        }
+
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: var(--shadow-soft);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px -5px rgba(0,0,0,0.12);
+        }
+
+        .button.is-dark-glass {
+            background: #1e293b;
+            color: #fff;
+            border: none;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .button.is-dark-glass:hover {
+            background: #334155;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        h1.title.is-1 { 
+            font-weight: 800; 
+            letter-spacing: -0.02em;
+            font-size: 3.0rem;
+	    white-space: nowrap; 
+        }
+        
+        h2.subtitle { 
+            font-weight: 300 !important;
+            color: var(--text-muted) !important;
+            letter-spacing: 0.01em;
+        }
+
+        .section-header {
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #94a3b8;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .image-container {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0,0,0,0.05);
+            background: white;
+        }
+        .image-container img {
+            display: block;
+            width: 100%;
+        }
+        
+        .result-caption {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-top: 1.2rem;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .stats-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.2rem;
+            border-left: 4px solid #e2e8f0;
+            font-size: 1.05rem;
+        }
+        .stats-list strong {
+            color: #0f172a;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+        }
+
+        pre {
+            background: #f8fafc;
+            color: #334155;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        /* 确保作者名字不折行的类 */
+        .author-name {
+            white-space: nowrap;
+            display: inline-block;
+            margin-bottom: 0.5rem; 
+        }
+        
+        footer a { color: var(--text-main); text-decoration: underline; }
+
+        /* =========================================
+           交互逻辑相关样式 (The Problem 区域)
+           ========================================= */
+        .interactive-diagram-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+            border-radius: 16px;
+            background: white;
+            padding: 2rem;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+        }
+
+        .diagram-base {
+            display: block;
+            width: 100%;
+            height: auto;
+            min-height: 350px; 
+            object-fit: contain;
+        }
+
+        .overlay-bubble {
+            position: absolute;
+            background: white;
+            border: 2px solid #0f172a;
+            border-radius: 50% / 50%;
+            padding: 1rem 1.2rem; 
+            font-family: 'Nanum Pen Script', cursive; 
+            font-size: 1.7rem; 
+            line-height: 1.2;
+            color: #0f172a;
+            box-shadow: 3px 3px 0px rgba(0,0,0,0.1);
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none; 
+            z-index: 10;
+            text-align: center;
+        }
+
+        .overlay-bubble::after {
+            content: 'o';
+            position: absolute;
+            bottom: -15px;
+            font-size: 0.85rem;
+            color: #0f172a;
+        }
+
+        /* === 新增：气泡交替动画 === */
+        .bubble-human {
+            top: 22%; 
+            left: 4%;
+            width: 40%; 
+            animation: fadeInOutHuman 8s infinite ease-in-out;
+        }
+        .bubble-human::after {
+            right: 30%;
+        }
+
+        .bubble-vlm {
+            top: 22%;
+            right: 4%;
+            width: 40%; 
+            animation: fadeInOutVLM 8s infinite ease-in-out;
+        }
+        .bubble-vlm::after {
+            left: 30%;
+        }
+
+        .diagram-controls {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .diagram-btn {
+            display: inline-block;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            background: white;
+            border: 2px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .diagram-btn.human { color: #16a34a; border-color: #bbf7d0; animation: highlightHuman 8s infinite ease-in-out; }
+        .diagram-btn.vlm { color: #dc2626; border-color: #fecdd3; animation: highlightVLM 8s infinite ease-in-out; }
+
+        /* === 动画关键帧定义 === */
+        @keyframes fadeInOutHuman {
+            0%, 42% { opacity: 1; visibility: visible; transform: translateY(0); }
+            50%, 92% { opacity: 0; visibility: hidden; transform: translateY(10px); }
+            100% { opacity: 1; visibility: visible; transform: translateY(0); }
+        }
+
+        @keyframes fadeInOutVLM {
+            0%, 42% { opacity: 0; visibility: hidden; transform: translateY(10px); }
+            50%, 92% { opacity: 1; visibility: visible; transform: translateY(0); }
+            100% { opacity: 0; visibility: hidden; transform: translateY(10px); }
+        }
+
+        @keyframes highlightHuman {
+            0%, 42% { background: #16a34a; color: white; transform: scale(1.05); border-color:#16a34a; box-shadow: 0 10px 15px -3px rgba(22, 163, 74, 0.3); }
+            50%, 92% { background: white; color: #16a34a; transform: scale(1); border-color:#bbf7d0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+            100% { background: #16a34a; color: white; transform: scale(1.05); border-color:#16a34a; box-shadow: 0 10px 15px -3px rgba(22, 163, 74, 0.3); }
+        }
+
+        @keyframes highlightVLM {
+            0%, 42% { background: white; color: #dc2626; transform: scale(1); border-color:#fecdd3; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+            50%, 92% { background: #dc2626; color: white; transform: scale(1.05); border-color:#dc2626; box-shadow: 0 10px 15px -3px rgba(220, 38, 38, 0.3); }
+            100% { background: white; color: #dc2626; transform: scale(1); border-color:#fecdd3; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+        }
+        
+        /* 内部小标签文字样式，不受上方手写体影响 */
+        .status-badge {
+            display: inline-block;
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 0.5rem;
+            padding: 0.1rem 0.8rem;
+            border-radius: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            h1.title.is-1 { font-size: 2.5rem; }
+            .overlay-bubble { font-size: 0.95rem; padding: 0.8rem; width: 35%; }
+            .status-badge { font-size: 0.9rem; }
+            .diagram-controls { flex-direction: column; gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<section class="section">
+    <!-- 将原来的 is-max-desktop 替换为更宽的自定义最大宽度 -->
+    <div class="container" style="max-width: 1200px;">
+        
+        <div class="has-text-centered mb-6 pt-5">
+            <!-- 移除了内部的 <br>，使得标题单行显示 -->
+            <h1 class="title is-1 is-size-2-mobile mb-4">
+                Position: The Systemic Lack of <span class="gradient-text">Agency</span> in Visual Reasoning
+            </h1>
+            <h2 class="subtitle is-4 mt-4">
+                Strong Semantic Recognition Does Not Equate to Active Visual Exploration
+            </h2>
+
+            <div class="mt-5 is-size-5" style="font-family: 'Outfit', sans-serif; line-height: 2;">
+                <!-- 第一行：前六位作者 -->
+                <div>
+                    <span class="mr-4 author-name"><strong>Yizhao Huang</strong><sup>1, *</sup></span>
+                    <span class="mr-4 author-name"><strong>Haoyang Chen</strong><sup>1, 2, *</sup></span>
+                    <span class="mr-4 author-name"><strong>Shiqin Wang</strong><sup>1, *</sup></span>
+                    <span class="mr-4 author-name"><strong>Pohson Huang</strong><sup>1, *</sup></span>
+                    <span class="mr-4 author-name"><strong>Jiayuan Li</strong><sup>2, 3</sup></span>
+                    <span class="mr-4 author-name"><strong>Haoyuan Du</strong><sup>1</sup></span>
+                    <span class="mr-4 author-name"><strong>Yandong Shi</strong><sup>1</sup></span>
+                </div>
+                <!-- 第二行：后三位作者 -->
+                <div class="mt-2">               
+                    <span class="mr-4 author-name"><strong>Zheng Wang</strong><sup>1, 2, <i class="fa-regular fa-envelope" style="font-size: 0.85em;"></i></sup></span>
+                    <span class="mr-4 author-name"><strong>Zhixiang Wang</strong><sup>4, <i class="fa-regular fa-envelope" style="font-size: 0.85em;"></i></sup></span>
+                </div>
+            </div>
+
+            <div class="is-size-6 mt-4 has-text-grey">
+                <span class="mr-4"><sup>1</sup>Wuhan University</span>
+                <span class="mr-4"><sup>2</sup>Zhongguancun Academy</span>
+                <span class="mr-4"><sup>3</sup>Beijing Institute of Technology</span>
+                <span class="mr-4 affiliation-name"><sup>4</sup>Shanda AI Research Tokyo</span>
+            </div>
+
+            <div class="is-size-7 mt-2 has-text-grey" style="opacity: 0.85;">
+                <span class="mr-4"><sup>*</sup>Equal Contribution</span>
+                <span class="mr-4"><sup><i class="fa-regular fa-envelope"></i></sup>Corresponding Author</span>
+            </div>
+
+            <div class="mt-4 mb-2">
+		<span class="is-size-4" style="font-family: 'Outfit', sans-serif; font-weight: 700; color: #0f172a;">
+                    ICML 2026
+                </span>
+            </div>
+
+            <div class="buttons is-centered mt-6">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="button is-dark-glass is-rounded">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Paper</span>
+                </a>
+                <a href="https://yizhaohuangwhu.github.io/Implicit-Reasoning/" target="_blank" rel="noopener noreferrer" class="button is-dark-glass is-rounded">
+                    <span class="icon"><i class="fa-brands fa-github"></i></span>
+                    <span>Code</span>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="button is-dark-glass is-rounded">
+                    <span class="icon"><i class="fa-solid fa-database"></i></span>
+                    <span>V-IRD Benchmark</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="glass-card">
+            <span class="section-header has-text-centered">Overview</span>
+            <div class="has-text-centered mb-5">
+                <h3 class="title is-3 section-title-gradient">Abstract</h3>
+            </div>
+            <div class="content has-text-justified">
+                <p>
+                    This paper argues that a systemic lack of <strong>Agency</strong> constrains the implicit reasoning capabilities of current Vision-Language Models (VLMs). 
+                    We define implicit reasoning as the ability to autonomously discover and utilize hidden visual evidence to bridge information gaps, rather than merely relying on explicitly specified targets.
+                </p>
+                <p>
+                    We introduce the <strong>Visual Implicit Reasoning Diagnosing Benchmark (V-IRD)</strong> to evaluate this missing quadrant. 
+                    Our results show that prominent VLMs possess strong retrieval capabilities but struggle with an <strong>Agency Deficit</strong> by failing to utilize reference objects or ignoring visual evidence that requires self-directed inquiry. 
+                    Simply put, strong semantic recognition does not equate to <strong>active visual exploration</strong>.
+                </p>
+            </div>
+        </div>
+
+        <div class="glass-card has-text-centered">
+            <span class="section-header">The Problem</span>
+            <div class="mb-5">
+                <h3 class="title is-3 section-title-gradient">The Visual Agency Gap</h3>
+            </div>
+            
+            <div class="interactive-diagram-wrapper">
+                <img src="./static/images/teaser_clean.png" alt="Active Agency vs Passive Capacity" class="diagram-base">
+                
+                <div class="overlay-bubble bubble-human">
+                    Coin is 2.5cm in diameter.<br>
+                    -> Bottle is 8 coins high<br>
+                    -> <strong>20cm</strong><br>
+                    <span class="status-badge" style="color: #16a34a;">
+                        <i class="fa-solid fa-check-circle"></i> Correct
+                    </span>
+                </div>
+
+                <div class="overlay-bubble bubble-vlm">
+                    Looks like a bottle<br>
+                    -> most bottles are<br>
+                    <strong>15cm</strong>.<br>
+                    <span class="status-badge" style="color: #dc2626;">
+                        <i class="fa-solid fa-times-circle"></i> Wrong
+                    </span>
+                </div>
+
+                <div class="diagram-controls">
+                    <div class="diagram-btn human">
+                        <i class="fa-solid fa-eye mr-2"></i>Human: Active Agency <i class="fa-solid fa-check ml-1"></i>
+                    </div>
+                    <div class="diagram-btn vlm">
+                        <i class="fa-solid fa-robot mr-2"></i>VLM: Passive Capacity <i class="fa-solid fa-xmark ml-1"></i>
+                    </div>
+                </div>
+            </div>
+
+            <p class="result-caption">
+                <strong>Figure 1:</strong> Comparison of Active Agency vs. Passive Capacity. While humans actively retrieve implicit visual cues (e.g., coin size) to solve problems, VLMs often ignore context and rely on priors. Watch the animation above to see their internal reasoning.
+            </p>
+        </div>
+
+        <div class="glass-card">
+            <span class="section-header has-text-centered">The Data</span>
+            <div class="has-text-centered mb-5">
+                <h3 class="title is-3 section-title-gradient">Task Distribution & Taxonomy</h3>
+            </div>
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <div class="image-container">
+                        <img src="./static/images/task_distribution.png" alt="V-IRD Task Distribution">
+                    </div>
+                    <p class="result-caption">
+                        <strong>Figure 3:</strong> Statistics of 4 categories and 10 tasks in V-IRD Benchmark.
+                    </p>
+                </div>
+                <div class="column is-6">
+                    <div class="content">
+                        <p class="mb-4">The V-IRD benchmark is structured into a hierarchical taxonomy spanning four core domains to ensure comprehensive cognitive coverage:</p>
+                        <ul class="stats-list">
+                            <li>
+                                <strong>Spatial Geometry (41%):</strong> Focusing on precise metrology tasks such as <em>Length</em>, <em>Distance</em>, <em>Volume</em>, and <em>Area</em>.
+                            </li>
+                            <li>
+                                <strong>Contextual Inference (29%):</strong> Challenges the model to deduce abstract information like <em>Environment</em> and <em>Remarks</em>.
+                            </li>
+                            <li>
+                                <strong>Physical Properties (21%):</strong> Covering <em>Temperature</em> (e.g., inferring from steam) and <em>Weight</em> estimation.
+                            </li>
+                            <li>
+                                <strong>Physical Logic (9%):</strong> Involving abstract reasoning such as <em>Electricity</em> (Ohm's Law) and <em>Kinematics</em>.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card">
+            <span class="section-header has-text-centered">Examples</span>
+            <div class="has-text-centered mb-5">
+                <h3 class="title is-3 section-title-gradient">V-IRD Benchmark Cases</h3>
+            </div>
+            <p class="has-text-centered mb-5">
+                Representative instances requiring autonomous visual discovery across domains.
+            </p>
+            <div class="image-container">
+                <img src="./static/images/benchmark_examples.png" alt="V-IRD Benchmark Examples">
+            </div>
+            <p class="result-caption">
+                <strong>Figure 4:</strong> The questions are designed to be "Target-Exclusive", meaning they ask for the final answer without explicitly pointing to the visual evidence required to solve it.
+            </p>
+        </div>
+
+        <div class="glass-card">
+            <span class="section-header has-text-centered">Evaluation</span>
+            <div class="has-text-centered mb-5">
+                <h3 class="title is-3 section-title-gradient">Main Benchmark Results</h3>
+            </div>
+            
+            <p class="has-text-centered mb-6">
+                We evaluated a wide range of VLMs, from open-source 2B models to proprietary SOTA models like GPT-5.2 and Gemini-3-Pro.
+            </p>
+
+            <div class="image-container mb-6">
+                <img src="./static/images/main_results.png" alt="Main Benchmark Results Table">
+            </div>
+
+            <div class="content mt-6">
+                <h4 class="title is-5">Key Observations</h4>
+                <ul class="stats-list">
+                    <li>
+                        <strong>Severe Collapse in Spatial Geometry:</strong> Most models struggle significantly in spatial tasks (e.g., measuring length using a reference).
+                    </li>
+                    <li>
+                        <strong>Proprietary vs. Open Source:</strong> Closed-source models generally outperform open-source models, exhibiting stronger robustness in active retrieval.
+                    </li>
+                    <li>
+                        <strong>Agency Deficit is Universal:</strong> Despite differences in capacity, the deficit in visual agency remains a bottleneck across all architectures compared to human performance.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="glass-card">
+            <h3 class="title is-4 mb-4">BibTeX</h3>
+            <pre><code>bibtex</code></pre>
+        </div>
+
+        <footer class="has-text-centered pb-6">
+            <p>Project page for <strong>V-IRD</strong>.</p>
+        </footer>
+
+    </div>
+</section>
+
+</body>
+</html>
