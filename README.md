@@ -22,6 +22,15 @@ Zhixiang Wang<sup>4 †</sup>.
   <a href="#-citation">Citation</a>
 </p>
 
+## 🔥 Update
+
+**2026.6**
+
+- The paper is post on arXiv **([arXiv 2606.14795](https://arxiv.org/abs/2606.14795))** 
+
+**2026.5**
+- The paper is accepted by ICML 2026.
+
 ## 🌞 Abstract
 
 This paper argues that a systemic lack of Agency constrains the implicit reasoning capabilities of current Vision-Language Models (VLMs). Implicit reasoning refers to the ability to autonomously discover and utilize hidden visual evidence to bridge information gaps, rather than merely relying on explicitly specified targets. This capacity underlies human visual understanding and everyday reasoning. To address this gap, we introduce the Visual Implicit Reasoning Diagnosing Benchmark (V-IRD), which compels models to derive answers strictly through autonomous visual analysis. Our results show that, despite strong retrieval abilities, prominent VLMs struggle to utilize reference objects and to attend to visual evidence that requires self-directed inquiry. Simply put, strong semantic recognition does not equate to active visual exploration, revealing a critical gap in current VLMs.
