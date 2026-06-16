@@ -18,6 +18,7 @@ Zhixiang Wang<sup>4 †</sup>.
 <p align="center">
   <a href="#-abstract">Abstract</a> ·
   <a href="#-v-ird">Benchmark (V-IRD)</a> ·
+  <a href="#-useage">Usage</a> ·
   <a href="#-results">Results</a> ·
   <a href="#-citation">Citation</a>
 </p>
