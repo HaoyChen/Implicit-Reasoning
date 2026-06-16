@@ -10,7 +10,7 @@ Yandong Shi<sup>1</sup>,
 Zheng Wang<sup>1,2 †</sup>, 
 Zhixiang Wang<sup>4 †</sup>.
 
-<sup>1</sup> Wuhan University, <sup>3</sup> Zhongguancun Academy, <sup>1</sup> Beijing Institute of Technology,  <sup>4</sup> Shanda AI Research Tokyo
+<sup>1</sup> Wuhan University, <sup>3</sup> Zhongguancun Academy, <sup>3</sup> Beijing Institute of Technology,  <sup>4</sup> Shanda AI Research Tokyo
 
 <sup>*</sup> Equal Contribution, <sup>†</sup> Corresponding author
 </div>
