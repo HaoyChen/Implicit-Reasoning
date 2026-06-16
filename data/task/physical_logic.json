@@ -1,0 +1,77 @@
+[
+    {
+        "id": "E1",
+        "image": "pictures/physical_logic/Electricity/E1.jpg",
+        "question": "What is the resistance of the object? "
+    },
+    {
+        "id": "E2",
+        "image": "pictures/physical_logic/Electricity/E2.jpg",
+        "question": "What is the total price of bananas? "
+    },
+    {
+        "id": "E3",
+        "image": "pictures/physical_logic/Electricity/E3.jpg",
+        "question": "What is the resistance of the bulb? "
+    },
+    {
+        "id": "E4",
+        "image": "pictures/physical_logic/Electricity/E4.jpg",
+        "question": "What is the current of the bulb? "
+    },
+    {
+        "id": "E7",
+        "image": "pictures/physical_logic/Electricity/E7.jpg",
+        "question": "What is the resistance value in the diagram in the picture? "
+    },
+    {
+        "id": "E9",
+        "image": "pictures/physical_logic/Electricity/E9.jpg",
+        "question": "What is the resistance value in the diagram in the picture? "
+    },
+    {
+        "id": "E10",
+        "image": "pictures/physical_logic/Electricity/E10.jpg",
+        "question": "What is the resistance value in the diagram in the picture? "
+    },
+    {
+        "id": "E11",
+        "image": "pictures/physical_logic/Electricity/E11.jpg",
+        "question": "What is the resistance of the light bulb in the picture in ohms? "
+    },
+    {
+        "id": "E13",
+        "image": "pictures/physical_logic/Electricity/E13.jpg",
+        "question": "What is the resistance of the light bulb in the picture in ohms? "
+    },
+    {
+        "id": "Kinematic1",
+        "image": "pictures/physical_logic/Kinematic/Kinematic1.jpg",
+        "question": "What will the height of the liquid on both sides be when the cap is opened? "
+    },
+    {
+        "id": "Kinematic2",
+        "image": "pictures/physical_logic/Kinematic/Kinematic2.jpg",
+        "question": "What is the magnitude of the buoyant force acting on the wooden block? "
+    },
+    {
+        "id": "Kinematic3",
+        "image": "pictures/physical_logic/Kinematic/Kinematic3.jpg",
+        "question": "What is the magnitude of the tension acting on the iron block? "
+    },
+    {
+        "id": "Kinematic4",
+        "image": "pictures/physical_logic/Kinematic/Kinematic4.jpg",
+        "question": "How many revolutions do A make respectively when C makes one revolution? "
+    },
+    {
+        "id": "Kinematic5",
+        "image": "pictures/physical_logic/Kinematic/Kinematic5.jpg",
+        "question": "What is the period of the pendulum? "
+    },
+    {
+        "id": "Kinematic6",
+        "image": "pictures/physical_logic/Kinematic/Kinematic6.jpg",
+        "question": "How many revolutions does right wheel make when lrft wheel makes one revolution?"
+    }
+]

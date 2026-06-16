@@ -1,0 +1,232 @@
+[
+    {
+        "id": "Remark1",
+        "image": "pictures/contectual_inference/Remark/Remark1.jpg",
+        "question": "What is the total length of this bridge in meters? Please think step by step."
+    },
+    {
+        "id": "Remark2",
+        "image": "pictures/contectual_inference/Remark/Remark2.jpg",
+        "question": "In which country might this girl be? Please think step by step."
+    },
+    {
+        "id": "Remark3",
+        "image": "pictures/contectual_inference/Remark/Remark3.jpg",
+        "question": "How many times has the country in the picture hosted the Olympic Games? Please think step by step."
+    },
+    {
+        "id": "Remark4",
+        "image": "pictures/contectual_inference/Remark/Remark4.jpg",
+        "question": "How many times has the country in the picture hosted the Olympic Games? Please think step by step."
+    },
+    {
+        "id": "Remark4_dup",
+        "image": "pictures/contectual_inference/Remark/Remark4.jpg",
+        "question": "In which year was the city depicted in the picture last hosted the Olympic Games? Please think step by step."
+    },
+    {
+        "id": "Remark5",
+        "image": "pictures/contectual_inference/Remark/Remark5.jpg",
+        "question": "Who is the current president of the country in the picture? Please think step by step."
+    },
+    {
+        "id": "Remark6",
+        "image": "pictures/contectual_inference/Remark/Remark6.jpg",
+        "question": "What is the total length of this bridge? Please think step by step."
+    },
+    {
+        "id": "Remark7",
+        "image": "pictures/contectual_inference/Remark/Remark7.jpg",
+        "question": "Who is the current president of the country in the picture? Please think step by step."
+    },
+    {
+        "id": "Remark8",
+        "image": "pictures/contectual_inference/Remark/Remark8.jpg",
+        "question": "What religion does the country where the girl in the picture is from believe in? Please think step by step."
+    },
+    {
+        "id": "Remark9",
+        "image": "pictures/contectual_inference/Remark/Remark9.jpg",
+        "question": "In what year did the country depicted in the picture last win the FIFA World Cup? Please think step by step."
+    },
+    {
+        "id": "Remark10",
+        "image": "pictures/contectual_inference/Remark/Remark10.jpg",
+        "question": "In which year will the country in the picture host the World Cup? Please think step by step."
+    },
+    {
+        "id": "Remark11",
+        "image": "pictures/contectual_inference/Remark/Remark11.jpg",
+        "question": "How tall is the Ferris wheel in the picture? Please think step by step."
+    },
+    {
+        "id": "Remark12",
+        "image": "pictures/contectual_inference/Remark/Remark12.jpg",
+        "question": "In which year will the country in the picture host the World Cup? Please think step by step."
+    },
+    {
+        "id": "Remark13",
+        "image": "pictures/contectual_inference/Remark/Remark13.jpg",
+        "question": "What is the most famous tree leaf in the country depicted in the picture? Please think step by step."
+    },
+    {
+        "id": "Remark14",
+        "image": "pictures/contectual_inference/Remark/Remark14.jpg",
+        "question": "How many times has the country in the picture won the FIFA World Cup? Please think step by step."
+    },
+    {
+        "id": "Remark15",
+        "image": "pictures/contectual_inference/Remark/Remark15.jpg",
+        "question": "What is the characteristic dialect of the region depicted in the picture? Please think step by step."
+    },
+    {
+        "id": "Remark17",
+        "image": "pictures/contectual_inference/Remark/Remark17.jpg",
+        "question": "What ocean is the country in the picture adjacent to? Please think step by step."
+    },
+    {
+        "id": "Remark18",
+        "image": "pictures/contectual_inference/Remark/Remark18.jpg",
+        "question": "What ocean is the country in the picture adjacent to? Please think step by step."
+    },
+    {
+        "id": "Remark19",
+        "image": "pictures/contectual_inference/Remark/Remark19.jpg",
+        "question": "What is the ranking of the country in the picture in terms of 2024 per capita GDP in the world? Please think step by step."
+    },
+    {
+        "id": "Remark20",
+        "image": "pictures/contectual_inference/Remark/Remark20.jpg",
+        "question": "When did the country in the picture last win the World Cup? Please think step by step."
+    },
+    {
+        "id": "Remark22",
+        "image": "pictures/contectual_inference/Remark/Remark22.jpg",
+        "question": "What is the 2024 GDP ranking of the country depicted in the picture among nations worldwide? Please think step by step."
+    },
+    {
+        "id": "Remark23",
+        "image": "pictures/contectual_inference/Remark/Remark23.jpg",
+        "question": "How many times does club depicted in the picture has won the UEFA Champions League? Please think step by step."
+    },
+    {
+        "id": "Remark24",
+        "image": "pictures/contectual_inference/Remark/Remark24.jpg",
+        "question": "What is the speed limit on the road shown in the picture? Please think step by step."
+    },
+    {
+        "id": "Environment3",
+        "image": "pictures/contectual_inference/Environments/Environment3.jpg",
+        "question": "What day is it according to this picture? Please think step by step."
+    },
+    {
+        "id": "Environment4",
+        "image": "pictures/contectual_inference/Environments/Environment4.jpg",
+        "question": "What year is it according to this picture? Please think step by step."
+    },
+    {
+        "id": "Environment5",
+        "image": "pictures/contectual_inference/Environments/Environment5.jpg",
+        "question": "What is the migration direction of swallows at this time of year? Please think step by step."
+    },
+    {
+        "id": "Environment6",
+        "image": "pictures/contectual_inference/Environments/Environment6.jpg",
+        "question": "What is the skin color of the people in this region? Please think step by step."
+    },
+    {
+        "id": "Environment7",
+        "image": "pictures/contectual_inference/Environments/Environment7.jpg",
+        "question": "Do the majority of people in this area consume beef? Please think step by step."
+    },
+    {
+        "id": "Environment8",
+        "image": "pictures/contectual_inference/Environments/Environment8.jpg",
+        "question": "Do local drivers sit on the left or the right side of the car? Please think step by step."
+    },
+    {
+        "id": "Environment1",
+        "image": "pictures/contectual_inference/Environments/Environment1.jpg",
+        "question": "Can I smoke in the place shown in the picture? Please think step by step."
+    },
+    {
+        "id": "Environment2",
+        "image": "pictures/contectual_inference/Environments/Environment2.jpg",
+        "question": "Can a truck with a height of 3m park in the parking lot shown in the picture? Please think step by step."
+    },
+    {
+        "id": "Environment9",
+        "image": "pictures/contectual_inference/Environments/Environment9.jpg",
+        "question": "What is the place depicted in the picture?? Please think step by step."
+    },
+    {
+        "id": "Environment10",
+        "image": "pictures/contectual_inference/Environments/Environment10.jpg",
+        "question": "Can a truck with a height of 5m park in the parking lot shown in the picture?? Please think step by step."
+    },
+    {
+        "id": "Environment11",
+        "image": "pictures/contectual_inference/Environments/Environment11.jpg",
+        "question": "Can I smoke in the place shown in the picture? Please think step by step."
+    },
+    {
+        "id": "Environment12",
+        "image": "pictures/contectual_inference/Environments/Environment12.jpg",
+        "question": "Can I swim at the location shown in the picture? Please think step by step."
+    },
+    {
+        "id": "Environment13",
+        "image": "pictures/contectual_inference/Environments/Environment13.jpg",
+        "question": "Can I fish at the location shown in the picture? Please think step by step."
+    },
+    {
+        "id": "Environment14",
+        "image": "pictures/contectual_inference/Environments/Environment14.jpg",
+        "question": "Which artist's artistic style is reflected in the place depicted in the picture? Please think step by step."
+    },
+    {
+        "id": "Environment15",
+        "image": "pictures/contectual_inference/Environments/Environment15.jpg",
+        "question": "Which artist's artistic style is shown in the picture? Please think step by step."
+    },
+    {
+        "id": "Environment16",
+        "image": "pictures/contectual_inference/Environments/Environment16.jpg",
+        "question": "What is the 2024 GDP ranking of the country where the person in the picture is located? Please think step by step."
+    },
+    {
+        "id": "Environment17",
+        "image": "pictures/contectual_inference/Environments/Environment17.jpg",
+        "question": "Which country's airline is the person in the picture taking? Please think step by step."
+    },
+    {
+        "id": "Environment18",
+        "image": "pictures/contectual_inference/Environments/Environment18.jpg",
+        "question": "Can I smoke in the place shown in the picture? Please think step by step."
+    },
+    {
+        "id": "Environment19",
+        "image": "pictures/contectual_inference/Environments/Environment19.jpg",
+        "question": "What is the name of the most famous basketball team in the city depicted in the picture? Please think step by step."
+    },
+    {
+        "id": "Environment20",
+        "image": "pictures/contectual_inference/Environments/Environment20.jpg",
+        "question": "When was this picture likely taken? Please think step by step."
+    },
+    {
+        "id": "Environment21",
+        "image": "pictures/contectual_inference/Environments/Environment21.jpg",
+        "question": "This picture shows the works of which artist? Please think step by step."
+    },
+    {
+        "id": "Environment22",
+        "image": "pictures/contectual_inference/Environments/Environment22.jpg",
+        "question": "What kind of place might be depicted in the picture? Please think step by step."
+    },
+    {
+        "id": "Environment23",
+        "image": "pictures/contectual_inference/Environments/Environment23.jpg",
+        "question": "How long will it take for this electric bike carrying a child to leave? Please think step by step."
+    }
+]

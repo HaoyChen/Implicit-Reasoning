@@ -1,0 +1,177 @@
+[
+    {
+        "id": "T1",
+        "image": "pictures/physical_property/T/T1.jpg",
+        "question": "What is the temperature (°C) of the alcohol in the picture? Please think step by step."
+    },
+    {
+        "id": "T8",
+        "image": "pictures/physical_property/T/T8.jpg",
+        "question": "What is the temperature (°C) of the water in the picture? Please think step by step."
+    },
+    {
+        "id": "T12",
+        "image": "pictures/physical_property/T/T12.jpg",
+        "question": "What is the temperature (°C) of the water in the picture? Please think step by step."
+    },
+    {
+        "id": "T13",
+        "image": "pictures/physical_property/T/T13.jpg",
+        "question": "What is the temperature (°C) of the water in the picture? Please think step by step."
+    },
+    {
+        "id": "T14",
+        "image": "pictures/physical_property/T/T14.jpg",
+        "question": "What is the temperature (°C) of the water in the picture? Please think step by step."
+    },
+    {
+        "id": "T15",
+        "image": "pictures/physical_property/T/T15.jpg",
+        "question": "What is the temperature (°C) of the water in the picture? Please think step by step."
+    },
+    {
+        "id": "T16",
+        "image": "pictures/physical_property/T/T16.jpg",
+        "question": "What is the temperature (°C) of the water in the picture? Please think step by step."
+    },
+    {
+        "id": "T17",
+        "image": "pictures/physical_property/T/T17.jpg",
+        "question": "What is the temperature (°C) of the water in the picture? Please think step by step."
+    },
+    {
+        "id": "T18",
+        "image": "pictures/physical_property/T/T18.jpg",
+        "question": "What is the temperature (°C) of the water in the picture? Please think step by step."
+    },
+    {
+        "id": "T19",
+        "image": "pictures/physical_property/T/T19.jpg",
+        "question": "Which side of the window is warmer, inside or outside? Please think step by step."
+    },
+    {
+        "id": "T20",
+        "image": "pictures/physical_property/T/T20.jpg",
+        "question": "What is the temperature (°C) of the water in the picture? Please think step by step."
+    },
+    {
+        "id": "T21",
+        "image": "pictures/physical_property/T/T21.jpg",
+        "question": "What is the temperature (°C) of the water in the picture? Please think step by step."
+    },
+    {
+        "id": "T2",
+        "image": "pictures/physical_property/T/T2.jpg",
+        "question": "Which side of the window is warmer, inside or outside? Please think step by step."
+    },
+    {
+        "id": "T3",
+        "image": "pictures/physical_property/T/T3.jpg",
+        "question": "What is the temperature of the water? Please think step by step."
+    },
+    {
+        "id": "T4",
+        "image": "pictures/physical_property/T/T4.jpg",
+        "question": "What is the temperature of the water? Please think step by step."
+    },
+    {
+        "id": "T5",
+        "image": "pictures/physical_property/T/T5.jpg",
+        "question": "What is the temperature of the water? Please think step by step."
+    },
+    {
+        "id": "T6",
+        "image": "pictures/physical_property/T/T6.jpg",
+        "question": "Which side of the window is warmer, inside or outside? Please think step by step."
+    },
+    {
+        "id": "T7",
+        "image": "pictures/physical_property/T/T7.jpg",
+        "question": "What is the temperature of the water? Please think step by step."
+    },
+    {
+        "id": "T8_dup",
+        "image": "pictures/physical_property/T/T8.jpg",
+        "question": "What is the temperature of the water? Please think step by step."
+    },
+    {
+        "id": "T9",
+        "image": "pictures/physical_property/T/T9.jpg",
+        "question": "What is the temperature of the water? Please think step by step."
+    },
+    {
+        "id": "T10",
+        "image": "pictures/physical_property/T/T10.jpg",
+        "question": "What is the temperature of the water? Please think step by step."
+    },
+    {
+        "id": "T11",
+        "image": "pictures/physical_property/T/T11.jpg",
+        "question": "Which side of the window is warmer, inside or outside? Please think step by step."
+    },
+    {
+        "id": "Weight1",
+        "image": "pictures/physical_property/Weight/W1.jpg",
+        "question": "How many kilograms do the liquid in the picture weigh? Please think step by step."
+    },
+    {
+        "id": "Weight2",
+        "image": "pictures/physical_property/Weight/W2.jpg",
+        "question": "How many kilograms do the boy in the picture weigh? Please think step by step."
+    },
+    {
+        "id": "Weight3",
+        "image": "pictures/physical_property/Weight/W3.jpg",
+        "question": "How many kilograms do the potatoes in the bag in the picture weigh? Please think step by step."
+    },
+    {
+        "id": "Weight4",
+        "image": "pictures/physical_property/Weight/W4.jpg",
+        "question": "What is the average mass(kg) of a book in the picture? Please think step by step."
+    },
+    {
+        "id": "Weight5",
+        "image": "pictures/physical_property/Weight/W5.jpg",
+        "question": "How many kilograms do the bread in the bag in the picture weigh? Please think step by step."
+    },
+    {
+        "id": "Weight6",
+        "image": "pictures/physical_property/Weight/W6.jpg",
+        "question": "What is the average mass(kg) of an apple in the picture? Please think step by step."
+    },
+    {
+        "id": "Weight11",
+        "image": "pictures/physical_property/Weight/W11.jpg",
+        "question": "What is the average mass(kg) of a banana in the picture? Please think step by step."
+    },
+    {
+        "id": "Weight12",
+        "image": "pictures/physical_property/Weight/W12.jpg",
+        "question": "How many kilograms do the apples in the bag in the picture weigh? Please think step by step."
+    },
+    {
+        "id": "Weight13",
+        "image": "pictures/physical_property/Weight/W13.jpg",
+        "question": "How many kilograms do the potatoes in the bag in the picture weigh? Please think step by step."
+    },
+    {
+        "id": "Weight14",
+        "image": "pictures/physical_property/Weight/W14.jpg",
+        "question": "What is the total weight of the jar and the jam in the picture in grams? Please think step by step."
+    },
+    {
+        "id": "Weight7",
+        "image": "pictures/physical_property/Weight/W7.jpg",
+        "question": "What is the density of the liquid on the left side? Please think step by step."
+    },
+    {
+        "id": "Weight8",
+        "image": "pictures/physical_property/Weight/W8.jpg",
+        "question": "What is the density of the liquid on the left side? Please think step by step."
+    },
+    {
+        "id": "Weight9",
+        "image": "pictures/physical_property/Weight/W9.jpg",
+        "question": "What is the mass of the object on the left? Please think step by step."
+    }
+]
