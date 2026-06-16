@@ -67,6 +67,44 @@ This benchmark is divided into four core categories:
 </div>
 
 ---
+## 🔨 Usage
+
+### Inference
+
+**Note on Input Data:** The evaluation questions are provided in JSON format and are located in the `data/task/` directory. Before running the inference, please open the corresponding script and  modify the dataset path variable to point to the target JSON file you wish to evaluate.
+
+To accommodate different model architectures and access methods, we provide three distinct Python inference scripts. Please select the appropriate script based on your target model:
+
+* **Qwen Series Models:** Dedicated inference pipeline optimized for the Qwen model family.
+    ```bash
+    python scripts/inference/batch_inference_qwen.py
+    ```
+
+* **Closed-Source API Models:** Designed for evaluating proprietary models via API calls (e.g., GPT, Gemini).
+    ```bash
+    python scripts/inference/batch_inference_api.py
+    ```
+
+* **Other Open-Source Models:** A generalized inference script for other models (e.g., InternVL, LLaVA).
+    ```bash
+    python scripts/inference/batch_inference.py
+    ```
+
+### Evaluation & Metric Calculation
+
+We provide a simple evaluation script to process model predictions, clean raw text outputs, and compute performance metrics. For numerical evaluations, the script automatically calculates accuracy across multiple error tolerance thresholds (5%, 10%, 20%, and 30%).
+
+Run the evaluation script using the following command:
+
+```bash
+python scripts/TH_acc.py \
+    --gt data/gt/all.json \
+    --pred path/to/model_predictions.json \
+    --out_txt path/to/Accuracy_Evaluation_Report.txt \
+    --out_json path/to/Detailed_Comparison_Results.json
+```
+
+---
 
 ## 🍭 Results
 
