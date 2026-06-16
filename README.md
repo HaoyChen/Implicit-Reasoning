@@ -1,6 +1,18 @@
 <div align="center">
-<h2>Position: The Systemic Lack of Agency in Visual Reasoning</h2>
-Official repo for [ICML 2026] "Position: The Systemic Lack of Agency in Visual Reasoning"
+<h1>Position: The Systemic Lack of Agency in Visual Reasoning</h1>
+Yizhao Huang<sup>1*</sup>, 
+Haoyang Chen<sup>1,2*</sup>, 
+Shiqin Wang<sup>1*</sup>, 
+Pohsun Huang<sup>1*</sup>, 
+Jiayuan Li<sup>3</sup>, 
+Haoyuan Du<sup>1</sup>,
+Yandong Shi<sup>1</sup>, 
+Zheng Wang<sup>1,2 †</sup>, 
+Zhixiang Wang<sup>4 †</sup>.
+
+<sup>1</sup> Wuhan University, <sup>3</sup> Zhongguancun Academy, <sup>1</sup> Beijing Institute of Technology,  <sup>4</sup> Shanda AI Research Tokyo
+
+<sup>*</sup> Equal Contribution, <sup>†</sup> Corresponding author
 </div>
 
 <p align="center">
@@ -63,6 +75,14 @@ This benchmark is divided into four core categories:
 
 ## ⭐ Citation
 
-If you find this research or the V-IRD benchmark helpful, please cite our paper as follows:
+If you find this research or the V-IRD benchmark helpful, please give a ⭐ and cite it as follows:
 
-```bibtex
+```
+
+@article{huang2026VIRD,
+  title={Position: The Systemic Lack of Agency in Visual Reasoning},
+  author={Huang, Yizhao and Chen, Haoyang and Wang, Shiqin and Huang, Pohsun and Li, Jiayuan and Du, Haoyuan and Shi, Yandong and Wang, Zheng and Wang, Zhixiang},
+  journal={arXiv preprint arXiv:2606.14795},
+  year={2026}
+}
+```
